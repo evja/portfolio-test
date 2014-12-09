@@ -1,0 +1,10 @@
+<h1>All Posts</h1>
+<% @posts.each do |post| %>
+  <h1><%= post.title %></h1>
+  <h1><%= post.author %></h1>
+  <p>
+    <%= post.body %>
+  </p>
+  <%= link_to 'Show', post_path(post) %>
+<% end %>
+
